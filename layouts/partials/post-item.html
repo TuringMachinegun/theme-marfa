@@ -1,20 +1,20 @@
 <li>
 <article>
   {{ if .Title }}
-  <section class="post-body">
   <header>
-	<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   </header>
   <section class="post-body">
 	{{ .Content }}
   </section>
-  </section>
   {{ else }}
-	{{ .Content }}
+  <section class="post-body">
+    {{ .Content }}
+  </section>
   {{ end }}
   <a href="{{ .Permalink }}" class="u-url">
 	<aside class="dates">
-	  <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}" class="dt-published">→ {{ .Date.Format "3:04 PM, Jan 2" }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02 15:04:05 CET" }}" class="dt-published">→ {{ .Date.Format "15:04, Jan 2" }}</time>
 	</aside>
   </a>
 </article>

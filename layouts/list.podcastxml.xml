@@ -2,24 +2,27 @@
   <channel>
     <title>Talk Tomorrow</title>
     <link>{{ .Permalink }}</link>
-    <description><![CDATA[Giovanni is an AI practitioner and co-founder of green-tech startup foldAI. Damiano is a communication and marketing expert, with a knack for tech and UX. Together, they explore the challenges of building a startup for systemic change, and ideas for a sustainable tomorrow.
-    
-    More on us:
-    <ul>
-    <li><a href="https://damianotescaro.com">Damiano Tescaro</a></li>
-    <li><a href="https://giov.dev">Giovanni Carmantini</a></li>
-    <li><a href="https://fold.ai">foldAI</a></li>
-    </ul>]]></description>
-	<itunes:image href="{{ .Site.Params.itunes_cover }}" />
-	<itunes:category text="{{ .Site.Params.itunes_category | htmlEscape }}">
-		<itunes:category text="{{ .Site.Params.itunes_subcategory | htmlEscape }}"></itunes:category>
-	</itunes:category>
-	<itunes:author>{{ .Site.Params.itunes_author | htmlEscape }}</itunes:author>
-	<itunes:explicit>no</itunes:explicit>		
-	<itunes:owner>
-		<itunes:name>{{ .Site.Params.itunes_author | htmlEscape }}</itunes:name>
-		<itunes:email>{{ .Site.Params.itunes_email | htmlEscape }}</itunes:email>
-	</itunes:owner>
+    <description>
+      <![CDATA[<p>Giovanni is an AI practitioner and co-founder of green-tech startup foldAI. Damiano is a communication and marketing expert, with a knack for tech and UX. Together, they explore the challenges of building a startup for systemic change, and ideas for a sustainable tomorrow.</p>
+               <p>
+               More on us:
+               <ul>
+                   <li><a href="https://damianotescaro.com">Damiano Tescaro</a></li>
+                   <li><a href="https://giov.dev">Giovanni Carmantini</a></li>
+                   <li><a href="https://fold.ai">foldAI</a></li>
+               </ul>
+               </p>]]>
+    </description>
+    <itunes:image href="{{ .Site.Params.itunes_cover }}" />
+    <itunes:category text="{{ .Site.Params.itunes_category | htmlEscape }}">
+      <itunes:category text="{{ .Site.Params.itunes_subcategory | htmlEscape }}"></itunes:category>
+    </itunes:category>
+    <itunes:author>{{ .Site.Params.itunes_author | htmlEscape }}</itunes:author>
+    <itunes:explicit>no</itunes:explicit>		
+    <itunes:owner>
+      <itunes:name>{{ .Site.Params.itunes_author | htmlEscape }}</itunes:name>
+      <itunes:email>{{ .Site.Params.itunes_email | htmlEscape }}</itunes:email>
+    </itunes:owner>
     {{ with .Site.LanguageCode }}
     <language>{{.}}</language>
     {{ end }}
